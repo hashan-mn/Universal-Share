@@ -642,5 +642,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ by Hashan Madhushanka**
-
-For questions, issues, or contributions, please visit our [GitHub repository](https://github.com/yourusername/universal-share).
