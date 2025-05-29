@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Share</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="universal-share.css">
+</head>
+
+<body>
+
+    <div class="bs-universal-share"></div>
+
+    <script src="./universal-share.min.js"></script>
+    <script>
+
+
+        new UniversalShare(".bs-universal-share", {
+            platforms: ["facebook", "twitter", "linkedin", "reddit", "email", "copy"],
+            theme: "rounded",
+            size: "small"
+        });
+
+
+    </script>
+</body>
+
+</html>
