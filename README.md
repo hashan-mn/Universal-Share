@@ -1,6 +1,6 @@
 # UniversalShare Plugin
 
-A lightweight, customizable JavaScript plugin for adding social media sharing buttons to your website. No dependencies required!
+A lightweight, customizable JavaScript plugin for adding social media sharing buttons to your website.
 
 ## Features
 
@@ -23,12 +23,6 @@ Download the `universal-share.js` file and include it in your project:
 
 ```html
 <script src="path/to/universal-share.js"></script>
-```
-
-### Option 2: CDN (if available)
-
-```html
-<script src="https://cdn.example.com/universal-share/2.0.0/universal-share.min.js"></script>
 ```
 
 ### CSS Dependencies
