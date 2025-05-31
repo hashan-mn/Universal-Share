@@ -16,8 +16,9 @@
     <script src="./universal-share.min.js"></script>
     <script>
 
+        const shareElement = document.querySelector(".bs-universal-share");
 
-        new UniversalShare(".bs-universal-share", {
+        new UniversalShare(shareElement, {
             platforms: ["facebook", "twitter", "linkedin", "reddit", "email", "copy"],
             theme: "rounded",
             size: "small"

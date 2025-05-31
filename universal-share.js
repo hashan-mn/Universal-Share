@@ -1,10 +1,19 @@
 class UniversalShare {
-    constructor(selector, options = {}) {
-        this.selector = selector;
-        this.element = document.querySelector(selector);
+    constructor(selectorOrElement, options = {}) {
+        // Handle both selector string and DOM element
+        if (typeof selectorOrElement === 'string') {
+            this.selector = selectorOrElement;
+            this.element = document.querySelector(selectorOrElement);
+        } else if (selectorOrElement instanceof Element) {
+            this.selector = null; // No selector when DOM element is passed directly
+            this.element = selectorOrElement;
+        } else {
+            console.error('UniversalShare: First parameter must be either a CSS selector string or a DOM element');
+            return;
+        }
 
         if (!this.element) {
-            console.error(`UniversalShare: Element with selector "${selector}" not found`);
+            console.error(`UniversalShare: Element ${this.selector ? `with selector "${this.selector}"` : ''} not found`);
             return;
         }
 
